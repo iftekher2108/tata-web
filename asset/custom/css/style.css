@@ -491,9 +491,11 @@ form button {
 .timeline-section {
     height: 100vh;
     width: 100%;
-
+    background-attachment: fixed !important;
+    background-position: center; 
     background-size: cover;
     background-repeat: no-repeat;
+
 
 
 
