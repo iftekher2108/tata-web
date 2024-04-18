@@ -20,13 +20,8 @@
   <style>
 
     .swiper-slide.hero-cont::before {
-      background: url(./asset/image/tile4020.png);
+      background: url('./asset/image/tile4020.png');
     }
-
-    .slide-3 {
-      background: linear-gradient(#2372f19c, #2a6dd89c), url(./asset/image/slide-3.jpg);
-    }
-
 
   </style>
 
@@ -509,7 +504,9 @@
             <!--  news slide 3 -->
             <div class="col-lg-4 col-md-12 col-sm-12">
 
-              <div class=" slide-3 news-2 p-4 d-flex flex-column justify-content-center h-100 bg-body-tertiary">
+              <div class=" slide-3 news-2 p-4 d-flex flex-column justify-content-center h-100 bg-body-tertiary"
+              style="background: linear-gradient(#2372f19c, #2a6dd89c), url(./asset/image/slide-3.jpg);"
+              >
                 <a href="" class="text-decoration-none fs-2 text-white mx-2 mb-3"> <i
                     class="fa-brands fa-facebook-f"></i></a>
                 <div class="new-content-1 px-4">
