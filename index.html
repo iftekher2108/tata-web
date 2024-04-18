@@ -5,13 +5,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>tata</title>
-  <link rel="stylesheet" href="asset/custom/css/style.css" />
-  <link rel="stylesheet" href="asset/custom/css/responsive.css" />
+
   <link rel="stylesheet" href="asset/bootstrap/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="asset/custom/css/style.css" />
+  <link rel="stylesheet" href="asset/custom/css/responsive.css" />
+
 </head>
 
 <body>
@@ -26,8 +30,8 @@
 
   <!-- navigation bar -->
 
-  <nav class="navbar navbar-expand-lg d-lg-block d-none top-0 z-3 position-sticky px-lg-5 mx-lg-5">
-    <div class="container-fluid mx-auto mx-lg-5 px-lg-5">
+  <nav class="navbar navbar-expand-lg z-3 sticky-top w-100 px-lg-5">
+    <div class="container-fluid mx-auto">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
         aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -67,7 +71,7 @@
             <a class="nav-link" href="#">Careers</a>
           </li>
         </ul>
-        <ul class="navbar-nav d-lg-flex d-none gap-3 mb-2 mb-lg-0 me-4">
+        <ul class="navbar-nav d-lg-flex d-none gap-3 mb-2 mb-lg-0 me-1">
           <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip"
             data-bs-title="WorldWide">
             <a href="#" class="nav-link">
@@ -79,19 +83,20 @@
             data-bs-title="Contact Us">
             <a href="#" class="nav-link"><i class="fa-regular fa-envelope"></i></a>
           </li>
+
+          <li class="nav-item search-icon search" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-custom-class="custom-tooltip" data-bs-title="Search">
+            <a href="#" class="nav-link"><i class="fa-solid text-dark fa-magnifying-glass"></i></a>
+          </li>
+
         </ul>
-        
+
       </div>
     </div>
   </nav>
-  <ul class="navbar-nav search-icon mb-lg-0">
-    <li class="nav-item search" data-bs-toggle="tooltip" data-bs-placement="bottom"
-      data-bs-custom-class="custom-tooltip" data-bs-title="Search">
-      <i class="fa-solid fa-magnifying-glass"></i>
-    </li>
-  </ul>
 
-  <form class="search d-flex d-none mx-auto px-5 mx-5" role="search">
+
+  <form class="search d-flex d-none mx-auto px-5" role="search">
     <input class="form-control me-2 rounded-0" type="search" placeholder="Enter your search keyword"
       aria-label="Search" />
     <button class="btn btn-outline-success rounded-0 px-5" type="submit">
@@ -102,53 +107,68 @@
   <!-- navigation bar -->
 
   <!-- navigation sub-menu -->
-  <div class="sub-menu">
-    <div class="sub-menu-content d-flex flex-column gap-3 w-50">
-      <div class="group">
-        <h4>Business Overview</h4>
-        <hr class="w-50 m-0">
-        <span class="fw-bolder">Learn More</span>
+  <div class="sub-menu py-3">
+    <div class="row g-3">
+
+      <div class="col-5 d-none d-lg-block">
+
       </div>
 
-      <div class="group">
-        <h4>Our Brands </h4>
-        <hr class="w-50 m-0">
-        <span class="fw-bolder">Browse Select Tata Brand </span>
-      </div>
+      <div class="col-lg-7 col-md-12 col-sm-12">
+        <div class="px-3">
+          <div class="group my-2">
+            <h3>Business Overview</h3>
+            <hr>
+            <div class="small my-2">
+              <span class="fw-bolder ">Learn More</span>
+            </div>
 
-
-
-      <div class="group">
-        <h4>Business Overview</h4>
-        <hr class="w-50 m-0">
-        <div class="sub-group d-flex">
-          <div class="sub-group-1 m-0">
-            <p>Technology </p>
-            <p>Steel </p>
-            <p>Automotive </p>
-            <p>Consumer & Retail </p>
           </div>
 
-          <div class="sub-group-1">
-            <p>Intrastructure </p>
-            <p>Financial Service </p>
-            <p>Aerospace and Defence </p>
+          <div class="group my-2">
+            <h3>Our Brands </h3>
+            <hr>
+            <div class="small my-2">
+              <span class="fw-bolder ">Browse Select Tata Brand </span>
+            </div>
+
           </div>
 
-          <div class="sub-group-1">
-            <p> </p>
-            <p> </p>
-            <p> </p>
-          </div>
+          <div class="group my-2">
+            <h3>Business Overview</h3>
+            <hr>
+            <div class="sub-group d-flex flex-wrap gap-4 small my-2">
+              <div class="sub-group-1 m-0">
+                <p>Technology </p>
+                <p>Steel </p>
+                <p>Automotive </p>
+                <p>Consumer & Retail </p>
+              </div>
 
+              <div class="sub-group-1 my-2">
+                <p>Infrastructure </p>
+                <p>Financial Service </p>
+                <p>Aerospace and Defence </p>
+              </div>
+
+              <div class="sub-group-1">
+                <p> </p>
+                <p> </p>
+                <p> </p>
+              </div>
+
+            </div>
+
+          </div>
         </div>
 
 
 
       </div>
 
-
     </div>
+
+
 
 
 
@@ -159,14 +179,7 @@
 
 
 
-
-
-
-
   <!-- navigation sub-menu -->
-
-
-
 
 
 
@@ -197,23 +210,25 @@
         <div class="hero-content position-relative">
           <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-backface-hidden position-relative">
             <div class="swiper-wrapper" id="swiper-wrapper-c2efcedbd7cbc4e2" aria-live="polite">
+
               <!-- slide 1 -->
               <div class="swiper-slide hero-cont d-flex align-items-center swiper-slide-active" role="group"
-                aria-label="1 / 9" style="width: 400px">
-                <div class="row hero-slide-content">
-                  <div class="col-lg-4 d-lg-block d-none"></div>
-                  <div class="col-lg-8 col-sm-10">
+                aria-label="1 / 9" style="width: 100%;
+                background:url('./asset/image/hero-banner-1.jpg');
+                ">
+                <div class="row hero-slide-content justify-content-evenly">
+                  <div class="col-lg-6 col-sm-10">
                     <span>Tata Stories</span>
                     <h1>Sporting Spirit</h1>
 
                     <div class="d-flex">
                       <div class="d-lg-flex d-none" style="
-                      height: 10vh;
-                      /* border: 2px solid #e2a330; */
-                      width: 2px;
+                      height: 16vh;
+                      /* border: 2px solid var(--bs-warning); */
+                      width: 3px;
 
                       margin-right: 2%;
-                      background: #e2a330;
+                      background: var(--bs-warning);
                     ">
                         <div class="vr"></div>
                       </div>
@@ -238,20 +253,22 @@
 
               <!-- slide 2 -->
               <div class="swiper-slide hero-cont d-flex align-items-center swiper-slide-next" role="group"
-                aria-label="2 / 9" style="width: 400">
-                <div class="row hero-slide-content">
-                  <div class="col-lg-4 d-lg-block d-none"></div>
-                  <div class="col-lg-8 col-sm-10">
+                aria-label="2 / 9" style="width: 100%;
+                background:url('./asset/image/hero-banner-2.avif');
+                ">
+                <div class="row hero-slide-content justify-content-evenly">
+                  <div class="col-lg-6 col-sm-10">
                     <span>Tata Stories</span>
                     <h1>The Architect of India's Luxury Hospitality</h1>
 
                     <div class="d-flex">
                       <div class="d-lg-flex d-none" style="
-                      height: 10vh;
-                      /* border: 2px solid #e2a330; */
-                      width: 2px;
+                      height: 15vh;
+                      /* border: 2px solid var(--bs-warning); */
+                      width: 3px;
+
                       margin-right: 2%;
-                      background: #e2a330;
+                      background: var(--bs-warning);
                     ">
                         <div class="vr"></div>
                       </div>
@@ -275,21 +292,22 @@
               <!-- slide 2 -->
 
               <!-- slide 3 -->
-              <div class="swiper-slide hero-cont d-flex align-items-center" role="group" aria-label="3 / 9"
-                style="width: 400px">
-                <div class="row hero-slide-content">
-                  <div class="col-lg-4 d-lg-block d-none"></div>
-                  <div class="col-lg-8 col-sm-10">
+              <div class="swiper-slide hero-cont d-flex align-items-center" role="group" aria-label="3 / 9" style="width: 100%;
+                background:url('./asset/image/hero-banner-3.jpg');
+                ">
+                <div class="row hero-slide-content justify-content-evenly">
+                  <div class="col-lg-6 col-sm-10">
                     <span>Tata Stories</span>
                     <h1>Leading in India, Building for the World</h1>
 
                     <div class="d-flex">
                       <div class="d-lg-flex d-none" style="
-                      height: 10vh;
-                      /* border: 2px solid #e2a330; */
-                      width: 2px;
+                      height: 15vh;
+                      /* border: 2px solid var(--bs-warning); */
+                      width: 3px;
+
                       margin-right: 2%;
-                      background: #e2a330;
+                      background: var(--bs-warning);
                     ">
                         <div class="vr"></div>
                       </div>
@@ -336,13 +354,16 @@
                     <div class="arrowSliding">
                       <div class="arrow"></div>
                     </div>
-                    <div class="arrowSliding delay1">
+                    <div class="arrowSliding ">
                       <div class="arrow"></div>
                     </div>
-                    <div class="arrowSliding delay2">
+                    <div class="arrowSliding">
                       <div class="arrow"></div>
                     </div>
-                    <div class="arrowSliding delay3">
+                    <div class="arrowSliding">
+                      <div class="arrow"></div>
+                    </div>
+                    <div class="arrowSliding">
                       <div class="arrow"></div>
                     </div>
                   </a>
@@ -373,7 +394,7 @@
 
 
         <!-- title -->
-        <h1 class="position-absolute">In the News</h1>
+        <h3 class="position-absolute shadow">In the News</h3>
         <!-- title -->
 
         <!-- news section -->
@@ -381,78 +402,81 @@
         <section class="news-layout">
 
 
-          <!-- news slide 1  -->
-          <div class="a">
+          <div class="row g-3">
+            <!-- news slide 1  -->
+            <div class="col-lg-8 col-md-12 col-sm-12">
 
-            <div class="d-flex flex-lg-nowrap flex-wrap">
+              <div class="row g-0">
 
-              <img src="asset/image/news-section-1-1.jpg" class="img-fluid" alt="news-section-1-1" />
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <img src="asset/image/news-section-1-1.jpg" class="img-fluid w-100" alt="news-section-1-1" />
+                </div>
 
-              <div class=" news-con-section d-flex flex-column justify-content-center bg-body-tertiary">
-                <a href="" class="text-decoration-none mx-2 mb-5">PRESS RELEASE</a>
-                <div class="new-content-1 px-4">
-                  <h1>Sporting Spirit</h1>
+                <div class="col-lg-8 col-md-6 col-sm-12 shadow-sm">
 
-                  <div class="d-flex">
-                    <div class="d-lg-flex d-none" style="
+                  <div class=" news-con-section d-flex flex-column h-100 justify-content-center bg-body-tertiary">
+                    <a href="" class="text-decoration-none mx-2 px-3 mb-5">PRESS RELEASE</a>
+                    <div class="new-content-1 px-4">
+                      <h1>Sporting Spirit</h1>
+
+                      <div class="d-flex">
+                        <div class="d-lg-flex d-none" style="
                           height: 10vh;
-                          width: 10px;
-                          /* border: 2px solid #e2a330; */
+                          width: 3px;
+                          /* border: 2px solid var(--bs-warning); */
                           margin-right: 5%;
-                            background : #e2a330;
+                            background : var(--bs-warning);
                         ">
-                      <div class="vr"></div>
-                    </div>
+                          <div class="vr"></div>
+                        </div>
 
-                    <div class="group mt-3">
-                      <p>
-                        From giving India its first luxury hotel to putting
-                        Indian hospitality on the world map, IHCL has been
-                        making the nation proud for over a century
-                      </p>
-                      <!-- <button class="btn">
+                        <div class="group mt-3">
+                          <p>
+                            From giving India its first luxury hotel to putting
+                            Indian hospitality on the world map, IHCL has been
+                            making the nation proud for over a century
+                          </p>
+                          <!-- <button class="btn">
                         Read Story <i class="fa-solid fa-arrow-right"></i>
                       </button> -->
+                        </div>
+                      </div>
                     </div>
                   </div>
+
                 </div>
+
+
               </div>
+
             </div>
+            <!-- news slide 1 -->
 
 
+            <!-- news slide 2 -->
+            <div class="col-lg-4 col-md-12 col-sm-12">
 
-
-
-
-          </div>
-          <!-- news slide 1 -->
-
-
-          <!-- news slide 2 -->
-          <div>
-
-            <div class="d-lg-flex img-fluid align-items-center  justify-content-center d-sm-block">
-
-              <div class=" slide-2 news-2 p-5 d-flex flex-column justify-content-center col-sm-12">
-                <a href="" class="text-decoration-none mx-2 mb-5 fs-2 text-white"> <i
+              <div class=" slide-2 news-2 p-4 d-flex flex-column justify-content-center h-100">
+                <a href="" class="text-decoration-none mx-2 mb-3 fs-2 text-white"> <i
                     class="fa-brands fa-twitter"></i></a>
 
 
                 <div class="new-content-1 px-4">
-                  <h1>Sporting Spirit</h1>
+                  <h3>Sporting Spirit</h3>
 
                   <div class="d-flex">
                     <div class="d-lg-flex d-none" style="
                         height: 10vh;
-                        border: 2px solid #e2a330;
+                       /* border: 3px solid var(--bs-warning); */
+                       width:3px;
                         margin-right: 5%;
-                        color: #e2a330;
+                        background: var(--bs-warning);
                       ">
                       <div class="vr"></div>
                     </div>
 
                     <div class="group mt-3">
-                      <p>
+                      <p class="small">
                         From giving India its first luxury hotel to putting
                         Indian hospitality on the world map, IHCL has been
                         making the nation proud for over a century
@@ -465,41 +489,37 @@
                 </div>
 
               </div>
+
             </div>
-
-
+            <!-- news slide 2 -->
 
           </div>
-          <!-- news slide 2 -->
 
 
 
+          <div class="row g-3 mt-2">
+            <!--  news slide 3 -->
+            <div class="col-lg-4 col-md-12 col-sm-12">
 
-
-
-          <!--  news slide 3 -->
-          <div>
-
-            <div class="d-lg-flex align-items-center justify-content-center d-sm-block">
-
-              <div class=" slide-3 news-2 p-5 d-flex flex-column justify-content-center bg-body-tertiary col-sm-12">
-                <a href="" class="text-decoration-none fs-2 text-white mx-2 mb-5"> <i
+              <div class=" slide-3 news-2 p-4 d-flex flex-column justify-content-center h-100 bg-body-tertiary">
+                <a href="" class="text-decoration-none fs-2 text-white mx-2 mb-3"> <i
                     class="fa-brands fa-facebook-f"></i></a>
                 <div class="new-content-1 px-4">
-                  <h1>Sporting Spirit</h1>
+                  <h3>Sporting Spirit</h3>
 
                   <div class="d-flex">
                     <div class="d-lg-flex d-none" style="
                         height: 10vh;
-                        border: 2px solid #e2a330;
+                       /* border: 2px solid var(--bs-warning); */
+                        width:3px;
                         margin-right: 5%;
-                        color: #e2a330;
+                        color: var(--bs-warning);
                       ">
                       <div class="vr"></div>
                     </div>
 
                     <div class="group mt-3">
-                      <p>
+                      <p class="small">
                         From giving India its first luxury hotel to putting
                         Indian hospitality on the world map, IHCL has been
                         making the nation proud for over a century
@@ -511,60 +531,62 @@
                   </div>
                 </div>
               </div>
+
+
             </div>
+            <!-- news slide 3 -->
 
 
+            <!-- news slide 4 -->
+            <div class="col-lg-8 col-md-12 col-sm-12">
 
+              <div class="row g-0">
 
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <img src="asset/image/news-section-1-1.jpg" class="img-fluid w-100" alt="news-section-1-1" />
+                </div>
 
-          </div>
-          <!-- news slide 3 -->
+                <div class="col-lg-8 col-md-6 col-sm-12">
+                  <div class=" news-con-section d-flex flex-column justify-content-center h-100 bg-body-tertiary">
+                    <a href="" class="text-decoration-none mx-2 px-3 mb-5">PRESS RELEASE</a>
+                    <div class="new-content-1 px-4">
+                      <h1>Sporting Spirit</h1>
 
-
-
-          <!-- news slide 4 -->
-          <div class="b">
-
-
-            <div class="d-flex slide-4 flex-lg-nowrap gap-0 flex-wrap">
-
-              <img src="asset/image/news-section-1-1.jpg" class="img-fluid" alt="news-section-1-1" />
-
-              <div class=" news-con-section d-flex flex-column justify-content-center bg-body-tertiary">
-                <a href="" class="text-decoration-none mx-2 mb-5">PRESS RELEASE</a>
-                <div class="new-content-1 px-4">
-                  <h1>Sporting Spirit</h1>
-
-                  <div class="d-flex">
-                    <div class="d-lg-flex d-none" style="
-                      height: 10vh;
-                      border: 2px solid #e2a330;
+                      <div class="d-flex">
+                        <div class="d-lg-flex d-none" style="
+                       height: 10vh;
+                        width:3px;
+                      /* border: 2px solid var(--bs-warning); */
                       margin-right: 5%;
-                      color: #e2a330;
+                      background: var(--bs-warning);
                     ">
-                      <div class="vr"></div>
-                    </div>
+                          <div class="vr"></div>
+                        </div>
 
-                    <div class="group mt-3">
-                      <p>
-                        From giving India its first luxury hotel to putting
-                        Indian hospitality on the world map, IHCL has been
-                        making the nation proud for over a century
-                      </p>
-                      <!-- <button class="btn">
+                        <div class="group mt-3">
+                          <p>
+                            From giving India its first luxury hotel to putting
+                            Indian hospitality on the world map, IHCL has been
+                            making the nation proud for over a century
+                          </p>
+                          <!-- <button class="btn">
                     Read Story <i class="fa-solid fa-arrow-right"></i>
                   </button> -->
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
+
               </div>
+
             </div>
-
-
-
+            <!-- news slide 4 -->
 
           </div>
-          <!-- news slide 4 -->
+
+
+
 
         </section>
 
@@ -611,8 +633,8 @@
 
         <!-- timeline section -->
 
-        <div class="timeline-section d-flex justify-content-center align-items-end">
-          <div class="col-lg-4 col-sm-8 mb-lg-5 text-center timeline-content text-white">
+        <div class="timeline-section d-flex justify-content-center align-items-center">
+          <div class="col-lg-6 col-sm-10 text-center timeline-content text-white">
             <h1 class="fw-bolder">Our Timelines</h1>
             <p>
               Founded over 150 years ago, the history of Tata group embodies, in
@@ -620,20 +642,13 @@
               compassionate capitalism in India, and increasingly, the world.
               Explore its vibrant history through a set of timelines that briefly
               highlight major milestones in its growth.
-              <span style="color: #e2a330">
+              <span style="color: var(--bs-warming)">
                 <i class="fa-solid fa-arrow-right"></i></span>
             </p>
           </div>
         </div>
 
-        <!-- timeline secton -->
-
-
-
-
-
-
-
+        <!-- timeline section -->
 
 
       </div>
@@ -645,14 +660,20 @@
 
 
 
+      <!-- <div id="list-item-4">Item 4
+       <p>...</p> 
+      </div>
+      
+      <div id="list-item-5">Item 5
+       <p>...</p> 
+      </div> -->
 
 
 
-      <h4 id="list-item-4">Item 4</h4>
-      <p>...</p>
-      <h4 id="list-item-5">Item 5</h4>
-      <p>...</p>
+
+
     </div>
+
   </div>
 
 
@@ -702,8 +723,8 @@
   <!-- footer section -->
 
   <footer>
-    <div class="d-lg-flex d-md-block d-sm-block p-5 gap-2 footer-content">
-      <div class="col-lg-3 d-lg-block d-none">
+    <div class="row g-2 p-5 footer-content">
+      <div class="col-lg-2 col-md-6 col-sm-12 d-lg-block d-none">
         <h4>Business</h4>
         <ul>
           <li><a href="">Technology</a></li>
@@ -718,7 +739,8 @@
           <li><a href="">Trading & Investment</a></li>
         </ul>
       </div>
-      <div class="col-lg-3 d-lg-block d-none">
+
+      <div class="col-lg-2 col-md-6 col-sm-12 d-lg-block d-none">
         <h4>Community</h4>
         <ul>
           <li><a href="">Health </a></li>
@@ -728,7 +750,7 @@
         </ul>
       </div>
 
-      <div class="col-lg-3 d-lg-block d-none">
+      <div class="col-lg-2 col-md-6 col-sm-12 d-lg-block d-none">
         <h4>About</h4>
         <ul>
           <li><a href="">The Tata group </a></li>
@@ -744,7 +766,7 @@
         </ul>
       </div>
 
-      <div class="wiget-4 col-lg-3 col-sm-10">
+      <div class="wiget-4 col-lg-3 col-md-6 col-sm-12">
         <h4 class="d-none d-lg-block">Newsroom</h4>
         <h4 class="d-none d-lg-block">Careers</h4>
         <h4>Jobs</h4>
@@ -753,12 +775,9 @@
         <h4 class="d-none d-lg-block">Legal Disclaimer</h4>
       </div>
 
-      <div class="d-lg-flex d-none" style="height: 40vh; margin-left: -5%; padding: 0% 5%">
-        <div class="vr"></div>
-      </div>
 
-      <div class="col-lg-4 col-sm-10 mx-sm-3 px-sm-3 mx-auto">
-        <div class="social d-flex justify-content-evenly">
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="social d-flex justify-content-evenly mb-md-3">
           <a href="" class="nav-link" data-bs-toggle="tooltip" data-bs-placement="top"
             data-bs-custom-class="custom-tooltip" data-bs-title="Facebook">
             <i class="fa-brands fa-facebook-f"></i>
@@ -785,7 +804,7 @@
           </a>
         </div>
 
-        <div class="input-group mt-lg-5 mt-sm-3 mb-3">
+        <div class="input-group my-3">
           <input type="text" class="form-control form-control-lg rounded-0 bg-transparent"
             placeholder="Enter Your E-mail Id to Subscribe" aria-label="Recipient's username"
             aria-describedby="button-addon2" />
@@ -793,7 +812,7 @@
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
-        <img src="/asset/image/Tata_Logo.svg" class="img-fluid m-5 " style="fill: rgb(255, 255, 255);" alt="logo">
+        <img src="/asset/image/Tata_Logo_footer.svg" class="img-fluid m-5" alt="logo">
 
 
       </div>
@@ -803,9 +822,10 @@
   </footer>
 
   <!-- footer section -->
-
-  <script src="asset/custom/js/main.js"></script>
   <script src="asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./asset/jquery/jquery.min.js"></script>
+  <script src="asset/custom/js/main.js"></script>
+
   <!-- tooltips triger -->
   <script>
     const tooltipTriggerList = document.querySelectorAll(

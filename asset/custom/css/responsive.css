@@ -3,20 +3,5 @@
         margin-left: 0%;
     }
 
-    .news-layout {
-        margin-top: 5%;
-        margin-bottom: 5%;
-        margin: auto;
-        width: 100%;
-        height: auto;
-
-        display: flex;
-        flex-direction: column;
-
-        gap: 10px;
-    }
-
-
-
 
 }
